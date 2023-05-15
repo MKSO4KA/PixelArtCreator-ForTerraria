@@ -485,3 +485,9 @@ We need to change line 828 to make the function public.
   ```
 
 </details>
+
+## Step4:Build and Test
+Once a project has been created, it can be tested. A new button will appear in the PixelArtCreator plugins, by clicking on which you can create art from pre-prepared txt files.
+
+![20230515_223526 (1)](https://github.com/MKSO4KA/PixelArtCreator-ForTerraria/assets/88591984/f5f8ab56-a40b-44aa-89ee-5ea37e807ab5)
+
