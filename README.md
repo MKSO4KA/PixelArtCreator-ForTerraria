@@ -95,7 +95,7 @@ The Python script is designed in such a way that it only normally closes with Ct
   ![Image](https://user-images.githubusercontent.com/88591984/238437609-5dfa5c0b-def3-4e72-90af-331f8a846741.png) - Source
 
 file.txt
---
+-- |
 6
 7
 1
