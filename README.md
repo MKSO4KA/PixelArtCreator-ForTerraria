@@ -1,6 +1,5 @@
-# PixelArtCreator-ForTerraria
+# PixelArtCreator For Terraria
 To begin with, I would like to clarify that I only worked with the tiles and colors that  [RussDev7](https://github.com/RussDev7/RussDev7) provide.  [Extracting Colors From The Terraria Map](https://github.com/RussDev7/Extracting-Terraria-Map-Colors#extracting-colors-from-the-terraria-map). 
-# Превращение набора tile-color-paint в картинку
 ### Step0: Lyrical digression
 [RussDev7](https://github.com/RussDev7/RussDev7) has figured out the extraction of colors, however, not all of these colors are suitable for us, because most of them are either sprites or loose blocks. And we also adhered to this position: The more colors are used, the more time it will take to process the photo. **On version 1.4.3.6 of the terraria, I counted 438 blocks that are better not to be placed**, because something can break or spoil them. (blocks of rope, cobwebs, sand and others have also been removed from the list of used blocks). In total, we have +- 250 blocks left that we can use (that's +- 8000 colors). 
 ### Step1: Sort and choose colors
