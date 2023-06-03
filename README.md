@@ -11,7 +11,7 @@ In the folder "C:\ARTs\colors" you should create a file maxtileXndY.txt, in whic
 
 
 
-### Step 2: Working with python script
+### Step 3: Working with python script
 The Python script is designed in such a way that it only normally closes with Ctrl+C. Normal - that is, writing the saved set of colors and pixels to a binary file. The script accepts 3 values from the user: The first is to enable or disable the script (
 Y or N). The second is whether to continue working on the image (Y or N). Third, the accepted value in this clause will determine whether the palette of colors will be saved for subsequent art.
 
@@ -30,6 +30,7 @@ Y or N). The second is whether to continue working on the image (Y or N). Third,
 9. 26
 10. 0
 
+  The file created as a result of the program ( file.txt in C:\ARTs) will later be used to create art using the PixelArtCreator plugin.
 </details>
 
 ## Step3:Reworking functions in TEdit
