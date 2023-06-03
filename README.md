@@ -1,5 +1,5 @@
 # PixelArtCreator For Terraria
-We will work with the files that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
+We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
 Using the [RussDev7](https://github.com/RussDev7/RussDev7) [materials](https://github.com/RussDev7/Extracting-Terraria-Map-Colors#extracting-colors-from-the-terraria-map):
 1. Using the source code provided in the first step of his tutorial, we have created our plugin for [TEdit](https://github.com/TEdit/Terraria-Map-Editor), which places all tiles and walls (except sprites and loose blocks) from the terraria. The name of the plugin is "PaletteCreator".
