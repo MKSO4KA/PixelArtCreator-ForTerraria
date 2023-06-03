@@ -50,6 +50,7 @@ namespace TEdit.ViewModel
             wvm.Plugins.Add(new FindChestWithPlugin(wvm));
             wvm.Plugins.Add(new FindPlanteraBulbPlugin(wvm));
             wvm.Plugins.Add(new PixelArtCreator(wvm)); // this
+            wvm.Plugins.Add(new PaletteCreator(wvm));  // and this
             wvm.Plugins.Add(new FindTileWithPlugin(wvm));
             wvm.Plugins.Add(new SpriteDebuggerPlugin(wvm));
             wvm.Plugins.Add(new TextStatuePlugin(wvm));
