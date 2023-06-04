@@ -5,11 +5,11 @@ Using the [RussDev7](https://github.com/RussDev7/RussDev7) [materials](https://g
 1. Using the source code provided in the first step of his tutorial, we have created our plugin for [TEdit](https://github.com/TEdit/Terraria-Map-Editor), which places all tiles and walls (except sprites and loose blocks) from the terraria. The name of the plugin is **"PaletteCreator"**.
 2. Using the source code of his "SortHexColors" program, and also using the source code provided in the second step of his tutorial, we created the **[PaletteAnalyzyzerKey mod](https://github.com/MKSO4KA/PaletteAnalyzerKey) for [TModLoader](https://github.com/tModLoader/tModLoader)**.
 
-### Step 2: Preparation before using all programs created by us
+### Step 1: Preparation before using all programs created by us
 First things first, you **should have a "C:\ARTs\" directory**. **In this directory there should be an exceptions.txt** file, in which you should write **blocks that are better not to use** when creating art (In my file, all those blocks that, in my opinion, can cause some errors when developing art on the map). 
 In the folder **"C:\ARTs\colors" you should create a file maxtileXndY.txt**, in which on the first and second line you should write the maximum X and Y where the program(TEdit PaletteCreator) stopped(default: x = 200; y = 1100).
 
-### Step 3: Working with python script
+### Step 2: Working with python script
 The Python script is designed in such a way that it only normally closes with **Ctrl+C**. Normal - **that is, writing the saved set of colors and pixels to a binary file** to be able to continue later. The script accepts 3 values from the user: The first is to enable or disable the script (
 Y or N). The second is whether to continue working on the image (Y or N)(If you started earlier and ended with ctrl + c). Third, the accepted value in this clause will determine whether the palette of colors will be saved for subsequent art.
 
