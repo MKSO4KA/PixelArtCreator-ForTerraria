@@ -32,7 +32,9 @@ namespace TEdit.Editor.Plugins
             //bool useGlass = false;
 
             string path = @"C:\ARTs\exceptions.txt";
+            string path2 = @"C:\ARTs\torchs.txt";
             string[] readText = File.ReadAllLines(path);
+            string[] torchs = File.ReadAllLines(path2);
             // First Do Tiles
             for (int x = minx; x < maxx; x++)
             {
@@ -40,14 +42,23 @@ namespace TEdit.Editor.Plugins
                 {
                     try
                     {
-                        Tile curTile = this._wvm.CurrentWorld.Tiles[x, y];
-                        curTile.Type = (ushort)tile;
-                        World.GetTileProperties(tile);
-                        if (!readText.Contains(Convert.ToString(tile)) )
-                        {
-                            curTile.IsActive = true;
-                            curTile.TileColor = (byte)paint;
-                            curTile.InActive = true;
+                        if (!readText.Contains(Convert.ToString(tile)))
+                        {   
+                            if (!torchs.Contains(Convert.ToString(tile)))
+                            {
+                                this._wvm.CurrentWorld.Tiles[x, y].Type = (ushort)tile;
+                                this._wvm.CurrentWorld.Tiles[x, y].IsActive = true;
+                                this._wvm.CurrentWorld.Tiles[x, y].TileColor = (byte)paint;
+                            }
+                            else
+                            {
+                                this._wvm.CurrentWorld.Tiles[x, y].Type = (ushort)tile;
+                                this._wvm.CurrentWorld.Tiles[x, y].IsActive = true;
+                                this._wvm.CurrentWorld.Tiles[x, y].TileColor = (byte)paint;
+                                this._wvm.CurrentWorld.Tiles[x, y].Wall = (ushort)1;
+                            }
+                            
+                            //this._wvm.CurrentWorld.Tiles[x, y].InActive = true;
                             _wvm.UpdateRenderPixel(x, y);
                         }
                         /*

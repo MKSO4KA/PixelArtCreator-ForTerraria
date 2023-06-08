@@ -1,26 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Windows;
 using System.Windows.Media.Imaging;
 using TEdit.Editor.Clipboard;
 using TEdit.Geometry.Primitives;
 using TEdit.Terraria;
-using TEdit.Terraria.Objects;
 using TEdit.ViewModel;
 using Microsoft.Win32;
-using SharpDX.Direct3D11;
-using System.Runtime.Remoting.Lifetime;
-using TEdit.Editor.Tools;
 //using SharpDX.Direct2D1.Effects;
 
 using static Microsoft.ApplicationInsights.MetricDimensionNames.TelemetryContext;
 using System.Windows.Input;
 using TEdit.UI.Xaml.XnaContentHost;
+using System.Windows.Shapes;
 
 namespace TEdit.Editor.Plugins
 {
@@ -83,7 +77,7 @@ namespace TEdit.Editor.Plugins
                 ofd.Multiselect = false;
                 if ((bool)ofd.ShowDialog())
                 {
-                    string filename = Path.GetFullPath(ofd.FileName);
+                    string filename = System.IO.Path.GetFullPath(ofd.FileName);
                     // MessageBox.Show(filename, "debug for me", MessageBoxButton.OK, MessageBoxImage.Error);
                     return filename;
                 }
@@ -111,6 +105,8 @@ namespace TEdit.Editor.Plugins
             {
                 goto EndofFile; // in order to avoid mistakes
             }
+            string torchspath = @"C:\ARTs\torchs.txt";
+            string[] torchs = File.ReadAllLines(torchspath);
             StreamReader f = new StreamReader(filepath);
             int newORold = Convert.ToInt32(f.ReadLine());
             int width = Convert.ToInt32(f.ReadLine());
@@ -149,11 +145,24 @@ namespace TEdit.Editor.Plugins
                             if (blockORwall == 1) // tile
                             {
                                 Tile curtile = _generatedSchematic.Tiles[x, y];
-                                //_wvm.UndoManager.SaveTile(x, y); // Add tile to the undo buffer.
-                                curtile.Type = (ushort)tile;
-                                curtile.IsActive = true; // Turn on tile
-                                curtile.InActive = TActive;
-                                curtile.TileColor = (byte)paint; // Set necessary paint
+                                if (!torchs.Contains(Convert.ToString(tile)))
+                                {
+                                    
+                                    //_wvm.UndoManager.SaveTile(x, y); // Add tile to the undo buffer.
+                                    curtile.Type = (ushort)tile;
+                                    curtile.IsActive = true; // Turn on tile
+                                    curtile.InActive = TActive;
+                                    curtile.TileColor = (byte)paint; // Set necessary paint
+                                }
+                                else
+                                {
+                                    curtile.Type = (ushort)tile;
+                                    curtile.IsActive = true; // Turn on tile
+                                    curtile.InActive = TActive;
+                                    curtile.TileColor = (byte)paint;
+                                    curtile.Wall = (ushort)1; // set wall under the torch
+                                }
+                                    
                                                                  //_wvm.UpdateRenderPixel(new Vector2Int32(x, y)); // Update pixel(show on map)
                                 _generatedSchematic.Tiles[x, y] = curtile;
                             }
