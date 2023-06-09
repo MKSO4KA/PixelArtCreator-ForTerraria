@@ -6,7 +6,7 @@ Using the [RussDev7](https://github.com/RussDev7/RussDev7) [materials](https://g
 2. Using the source code of his "SortHexColors" program, and also using the source code provided in the second step of his tutorial, we created the **[PaletteAnalyzyzerKey mod](https://github.com/MKSO4KA/PaletteAnalyzerKey) for [TModLoader](https://github.com/tModLoader/tModLoader)**.
 
 ### Step 1: Preparation before using all programs created by us
-First things first, you **should have a "C:\ARTs\" directory**. **In this directory there should be an exceptions.txt** file, in which you should write **blocks that are better not to use** when creating art (In my file, all those blocks that, in my opinion, can cause some errors when developing art on the map). 
+First things first, you **should have a "C:\ARTs\" directory**. **In this directory there should be an exceptions.txt(and torchs.txt)** file, in exceptions you should write **blocks that are better not to use** when creating art (In my file, all those blocks that, in my opinion, can cause some errors when developing art on the map). 
 In the folder **"C:\ARTs\colors" you should create a file maxtileXndY.txt**, in which on the first and second line you should write the maximum X and Y where the program(TEdit PaletteCreator) stopped(default: x = 200; y = 1100).
 
 ### Step 2: Working with python script
