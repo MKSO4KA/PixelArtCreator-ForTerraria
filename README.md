@@ -10,8 +10,9 @@ First things first, you **should have a "C:\ARTs\" directory**. **In this direct
 In the folder **"C:\ARTs\colors" you should create a file maxtileXndY.txt**, in which on the first and second line you should write the maximum X and Y where the program(TEdit PaletteCreator) stopped(default: x = 200; y = 1100).
 
 ### Step 2: Working with python script
-The Python script is designed in such a way that it only normally closes with **Ctrl+C**. Normal - **that is, writing the saved set of colors and pixels to a binary file** to be able to continue later. The script accepts 3 values from the user: The first is to enable or disable the script (
-Y or N). The second is whether to continue working on the image (Y or N)(If you started earlier and ended with ctrl + c). Third, the accepted value in this clause will determine whether the palette of colors will be saved for subsequent art.
+The Python script is designed in such a way that it only normally closes with **Ctrl+C**. Normal - **that is, writing the saved set of colors and pixels to a binary file** to be able to continue later. The script accepts 3 values from the user: The first is to The first is the directory to the png file. The second is whether to continue working on the image (Y or N)(If you started earlier and ended with ctrl + c). The third is the question of whether the previous palette should be used. (Analysis of the entire image, which occurs at the very beginning, during this process it is impossible to stop the program) The analyzed palette allows, in some cases, to speed up the transformation of the image into textures.
+
+All this script written by me works as follows: First, the image palette is analyzed. Then the selected palette is compared with the colors of the terraria palette. Subsequently, the resulting new palette is used to find tiles from it.
 
 <details>
   <summary>From image to terraria pixels</summary>
