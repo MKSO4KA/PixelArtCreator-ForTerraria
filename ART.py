@@ -71,13 +71,6 @@ class ART:
         self.imgX = Image.open(self.location_png)
     #imgX.show()
         self.oldORnew = 1 # 1 == new # 0 == old #
-        try:
-            os.makedirs(self.location_name)
-        except OSError:
-            shutil.rmtree(self.location_name[:-7])
-            os.makedirs(self.location_name)
-        print("File will be located on this path %s " % self.location_name[:-7])
-        shutil.copyfile(self.location_png, self.location_name[:-7] + self.name + '.png')
 
 
 
@@ -191,6 +184,13 @@ class ART:
         Fname = self.location_name
         def func():
             listp = art.k() #0 = tiles; #1 = colors(rgb)
+            try:
+                os.makedirs(self.location_name)
+            except OSError:
+                shutil.rmtree(self.location_name[:-7])
+                os.makedirs(self.location_name)
+            #print("File will be located on this path %s " % self.location_name[:-7])
+            shutil.copyfile(self.location_png, self.location_name[:-7] + self.name + '.png')
             with open(self.location_name + 'massiveT.ob', 'wb+') as fp:
                 pickle.dump(listp[0], fp)
             with open(self.location_name + 'massiveC.ob', 'wb+') as fp:
@@ -262,7 +262,7 @@ class ART:
             return (tileORpaint, tile, paint) #not uses
 
         def continueorrestart(w, h):
-            poop = str(input("Do you want to continue with the file?(y or n)"))
+            poop = str(input("Do you want to continue with the art?(y or n)"))
             if poop != ("n" or "N" or "No" or "NO" or "no" or "nO"):
                 return WndH(w, h)
             else:
@@ -273,8 +273,8 @@ class ART:
                 return (0, 0, 0)
 
         def continueor():
-            poop = str(input("New art? - Y or N"))
-            if poop != ("n" or "N" or "No" or "NO" or "no" or "nO"):
+            poop = str(input("Use old-art palette? - Y or N"))
+            if poop == ("n" or "N" or "No" or "NO" or "no" or "nO"):
                 lists = func()
             else:
                 lists = fonc()
