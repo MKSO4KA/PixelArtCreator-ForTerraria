@@ -3,8 +3,8 @@ We will work with the tiles and colors that are the result of the [PaletteAnalyz
 ### Step0: Lyrical digression
 Using the [RussDev7](https://github.com/RussDev7/RussDev7) [materials](https://github.com/RussDev7/Extracting-Terraria-Map-Colors#extracting-colors-from-the-terraria-map):
 1. Using the source code provided in the first step of his tutorial, we have created our plugin for [TEdit](https://github.com/TEdit/Terraria-Map-Editor), which places all tiles and walls (except sprites and loose blocks) from the terraria. The name of the plugin is **"PaletteCreator"**.
-2. Using the source code of his "SortHexColors" program, and also using the source code provided in the second step of his tutorial, we created the **[PaletteAnalyzyzerKey mod](https://github.com/MKSO4KA/PaletteAnalyzerKey) for [TModLoader](https://github.com/tModLoader/tModLoader)**.
-
+2. Using the source code of his "SortHexColors" program, and also using the source code provided in the second step of his tutorial, we created the **[PaletteAnalyzyzerKey mod](https://github.com/MKSO4KA/PaletteAnalyzerKey) for [TModLoader](https://github.com/tModLoader/tModLoader)**.  
+ Check Vided on YT - [VIDEO](https://youtu.be/H4xKAvQ9Yr8) 
 ### Step 1: Preparation before using all programs created by us
 First things first, you **should have a "C:\ARTs\" directory**. **In this directory there should be an exceptions.txt(and torchs.txt)** file, in exceptions you should write **blocks that are better not to use** when creating art (In my file, all those blocks that, in my opinion, can cause some errors when developing art on the map).   
 Blocks occupying more than one cell on the map should be registered in the exception file (Interior items for example)  
