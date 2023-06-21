@@ -266,10 +266,6 @@ class ART:
             if poop != ("n" or "N" or "No" or "NO" or "no" or "nO"):
                 return WndH(w, h)
             else:
-                my_file = open(Fname[:-7] + "file.txt", "w")
-                my_file.write(str(self.oldORnew) + "\n" + str(w) + "\n" + str(h))
-                my_file.close()
-                print(w, h, "Image dimensions\n", 0, 0, "Start Pixel")
                 return (0, 0, 0)
 
         def continueor():
@@ -333,6 +329,10 @@ class ART:
         start_time2 = time.time()
         (wstart, hstart, tyolka) = continueorrestart(w, h)
         lists = continueor()
+        my_file = open(Fname[:-7] + "file.txt", "w")
+        my_file.write(str(self.oldORnew) + "\n" + str(w) + "\n" + str(h))
+        my_file.close()
+        print(w, h, "Image dimensions\n", wstart, hstart, "Start Pixel")
         try:
             my_file = open(Fname[:-7] + "file.txt", "a+")
             for w1 in range(wstart, w):
