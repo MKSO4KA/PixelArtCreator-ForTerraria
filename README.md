@@ -1,6 +1,3 @@
-# I noticed that the script is not working.
-I hurried a bit, eventually posting a slightly newer version of the script, which is currently being worked on. Now I'll remake the mod, the script and the function in tedit a bit, and post the script here. 
-
 # PixelArtCreator For Terraria
 We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
