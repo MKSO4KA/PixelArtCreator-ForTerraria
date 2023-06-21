@@ -1,3 +1,5 @@
+# The project is frozen. 
+I am planning to remake the main script from python to c#. This will take some time, so don't expect any updates just yet. 
 # PixelArtCreator For Terraria
 We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
