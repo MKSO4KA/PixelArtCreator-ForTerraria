@@ -1,5 +1,5 @@
 # The project is frozen. 
-I am planning to remake the main script from python to c#. This will take some time, so don't expect any updates just yet. 
+I am planning to remake the main script from python to c#. This will take some time, so don't expect any updates just yet. This will take a little longer than expected. All due to the fact that I got a little confused in the code of my python script, and decided to completely redo it. Luckily I understand the concept.
 # PixelArtCreator For Terraria
 We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
