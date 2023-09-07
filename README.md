@@ -1,5 +1,7 @@
-# The project is frozen. 
+# The project isn't frozen. 
 I am planning to remake the main script from python to c#. This will take some time, so don't expect any updates just yet. This will take a little longer than expected. All due to the fact that I got a little confused in the code of my python script, and decided to completely redo it. Luckily I understand the concept.
+UPD from 7.09.2023: 
+I made the basis for a further program in c#. It works 32 times faster than Python. Soon (if I fail to implement the paint, then within 3 weeks) I will post in a separate repository (now hidden) the source code of this program and the created program.
 # PixelArtCreator For Terraria
 We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
