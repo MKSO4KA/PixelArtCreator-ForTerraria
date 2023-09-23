@@ -1,7 +1,5 @@
 # The project isn't frozen. 
-I am planning to remake the main script from python to c#. This will take some time, so don't expect any updates just yet. This will take a little longer than expected. All due to the fact that I got a little confused in the code of my python script, and decided to completely redo it. Luckily I understand the concept.
-UPD from 7.09.2023: 
-I made the basis for a further program in c#. It works 32 times faster than Python. Soon (if I fail to implement the paint, then within 3 weeks) I will post in a separate repository (now hidden) the source code of this program and the created program.
+I am preparing a tutorial and files necessary for proper installation. The repository is hidden for now, but it will definitely be open on October 1st. In theory, nothing much has changed since this version, however, now it is possible to create complex art (4k/8k), but their creation will take from 10 minutes to 10 hours. On average, four hours is enough. Of course, you can search and find, among the Steam screenshots, my screenshot of a map in Terraria with the Avengers art built (8400x2400).
 # PixelArtCreator For Terraria
 We will work with the tiles and colors that are the result of the [PaletteAnalyzer](https://github.com/MKSO4KA/PaletteAnalyzerKey) mod. 
 ### Step0: Lyrical digression
